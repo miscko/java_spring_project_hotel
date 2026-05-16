@@ -14,7 +14,7 @@ public class HotelServiceClient {
 
     private final RestTemplate restTemplate;
 
-    @Value("${hotel.service.url}")
+    @Value("${HOTEL_SERVICE_URL:http://localhost:8081}")
     private String hotelServiceUrl;
 
     public HotelServiceClient(RestTemplate restTemplate) {
